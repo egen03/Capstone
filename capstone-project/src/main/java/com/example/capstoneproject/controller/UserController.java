@@ -1,5 +1,7 @@
 package com.example.capstoneproject.controller;
 
+import com.example.capstoneproject.models.User;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
