@@ -7,7 +7,8 @@ import java.util.List;
 public class UserServiceImpl implements UserService{
     @Override
     public User getUser() {
-        return null;
+        User user = new User("jewel", "password5");
+        return user;
     }
 
     @Override
