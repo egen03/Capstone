@@ -21,4 +21,10 @@ public class UserController {
 //        User userOne = new User("erica", "password");
         return new User("erica", "password");
     }
+
+//    create endpoint for list of all users
+    @GetMapping("/listall")
+    public String listAll() {
+        return "List of all users";
+    }
 }
