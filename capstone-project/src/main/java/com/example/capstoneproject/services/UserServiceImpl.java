@@ -1,10 +1,13 @@
 package com.example.capstoneproject.services;
 
 import com.example.capstoneproject.models.User;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
+@Service
 public class UserServiceImpl implements UserService{
     @Override
     public User getUser() {
