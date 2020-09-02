@@ -24,7 +24,13 @@ public class UserController {
 
 //    create endpoint for list of all users
     @GetMapping("/listall")
-    public String listAll() {
-        return "List of all users";
+//    java function List<> used to list all users
+    public List<User>listAll() {
+//     list of users
+        List<User> users = new ArrayList<User>();
+//     create user objects
+        users.add(new User("Ayana", "password2"));
+        users.add(new User("Jeffrey", "password3"));
+        return users;
     }
 }
