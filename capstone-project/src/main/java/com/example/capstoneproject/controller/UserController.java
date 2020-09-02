@@ -31,6 +31,7 @@ public class UserController {
 //     create user objects
         users.add(new User("Ayana", "password2"));
         users.add(new User("Jeffrey", "password3"));
+        users.add(new User("Lexy", "password4"));
         return users;
     }
 }
