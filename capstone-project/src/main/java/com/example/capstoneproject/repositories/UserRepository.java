@@ -1,4 +1,7 @@
 package com.example.capstoneproject.repositories;
 
-public class UserRepository {
+import com.example.capstoneproject.models.User;
+import org.springframework.data.repository.CrudRepository;
+
+public interface UserRepository extends CrudRepository {
 }
