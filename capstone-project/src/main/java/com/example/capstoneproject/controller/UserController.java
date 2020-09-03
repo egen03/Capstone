@@ -1,6 +1,6 @@
 package com.example.capstoneproject.controller;
 
-import com.example.capstoneproject.models.User;
+import com.example.capstoneproject.models.Login;
 
 import com.example.capstoneproject.services.UserService;
 
@@ -18,14 +18,14 @@ public class UserController {
     UserService userService;
 
     @GetMapping
-    public User userOne() {
+    public Login userOne() {
         return userService.getUser();
     }
 
 //    create endpoint for list of all users
     @GetMapping("/listall")
 //    java function List<> used to list all users
-    public List<User> listAll() {
+    public List<Login> listAll() {
         return userService.getUsers();
     }
 }

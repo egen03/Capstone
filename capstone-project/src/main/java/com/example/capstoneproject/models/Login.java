@@ -1,31 +1,19 @@
 package com.example.capstoneproject.models;
+
 import javax.persistence.*;
 
-@Entity
-@Table(name = "users")
-public class User {
-
-    @Id
-    @Column
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(unique = true)
+public class Login {
+//    2 fields of user - username &password
     private String username;
-
-    @Column
     private String password;
 
-    public User() {}
-
-    public Long getId() {
-        return id;
+//    constructor
+    public Login(String username, String password) {
+        this.username = username;
+        this.password = password;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
+//    getters and setters for username
     public String getUsername() {
         return username;
     }
@@ -33,6 +21,9 @@ public class User {
     public void setUsername(String username) {
         this.username = username;
     }
+
+//    getters and setters for password
+
 
     public String getPassword() {
         return password;
@@ -42,3 +33,7 @@ public class User {
         this.password = password;
     }
 }
+
+
+
+
