@@ -42,7 +42,8 @@
 			<artifactId>postgresql</artifactId>
 			<version>42.2.16</version>
 		</dependency>
-<!--LIFTED FROM SPRING REPOSITORY TO RUN WITH SPRINGBOOT-->
+
+<!--LIFTED FROM SPRING REPOSITORY TO RUN WITH POSTGRES -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
