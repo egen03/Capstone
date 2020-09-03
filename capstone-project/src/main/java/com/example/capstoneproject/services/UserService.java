@@ -1,6 +1,7 @@
 package com.example.capstoneproject.services;
 
 import com.example.capstoneproject.models.Login;
+import com.example.capstoneproject.models.User;
 
 import java.util.List;
 
@@ -8,4 +9,12 @@ import java.util.List;
 public interface UserService {
     public Login getUser();
     public List<Login> getUsers();
+
+//    ////// POSTGRES SQL /////////
+
+//    create user using IOC, return an array of users
+
+    public Iterable<User> listUsers();
+    public User createUser(User user);
+
 }
