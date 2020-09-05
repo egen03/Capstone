@@ -6,11 +6,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 // Rest Controller created
 @RestController
-@RequestMapping ("/shirts")
+@RequestMapping ("/fashion")
 public class shirts {
 //    Get request for api
     @GetMapping
-    public String listOfTops() {
+    public String listOfItems() {
+        return "Shirts, Pants, & Dresses";
+    }
+    @GetMapping ("/shirts")
+    public String shirts() {
         return "Shirts";
     }
     @GetMapping ("/bottoms")
