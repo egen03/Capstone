@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
     }
 // ///////////// POSTGRES SQL //////////////////
 
-//    implement user interface
+//    implement user interfaces
     @Autowired
     private UserRepository userRepository;
 
@@ -41,5 +41,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public User createUser(User user) {
         return userRepository.save(user);
+    }
+
+    @Override
+    public User login(String username, String password) {
+        return userRepository.login(username, password);
     }
 }

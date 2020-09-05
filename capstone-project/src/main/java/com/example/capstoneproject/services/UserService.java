@@ -12,9 +12,10 @@ public interface UserService {
 
 //    ////// POSTGRES SQL /////////
 
-//    create user using IOC, return an array of users
+//    create user using IOC, return an array of users, and login
 
     public Iterable<User> listUsers();
     public User createUser(User user);
+    public User login(String username, String password);
 
 }

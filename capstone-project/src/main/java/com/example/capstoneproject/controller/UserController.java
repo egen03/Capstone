@@ -42,5 +42,10 @@ public class UserController {
         return userService.createUser(userParam);
    }
 
+//   login functionality
+   @GetMapping ("/login/{username}/{password}")
+    public User login(@PathVariable String username, String password){
+        return userService.login(username, password);
+   }
 
 }
