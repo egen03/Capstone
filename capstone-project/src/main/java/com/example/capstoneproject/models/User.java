@@ -2,7 +2,7 @@ package com.example.capstoneproject.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "users")
+@Table(name = "subscribers")
 public class User {
 
     @Id

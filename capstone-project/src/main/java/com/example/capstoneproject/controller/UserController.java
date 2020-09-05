@@ -2,12 +2,12 @@ package com.example.capstoneproject.controller;
 
 import com.example.capstoneproject.models.Login;
 
+import com.example.capstoneproject.models.User;
 import com.example.capstoneproject.services.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.*;
 
 @RestController
@@ -28,4 +28,19 @@ public class UserController {
     public List<Login> listAll() {
         return userService.getUsers();
     }
+
+//    ////////// POSTGRES /////////////
+
+    @GetMapping ("/users")
+    public Iterable<User> findALL() {
+        return userService.listUsers();
+    }
+
+//    publish data to postgres
+   @PostMapping
+    public User createUser(@RequestBody User userParam) {
+        return userService.createUser(userParam);
+   }
+
+
 }
