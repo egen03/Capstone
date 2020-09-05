@@ -1,23 +1,27 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 function App() {
+//    async function provides connection to React app
+    async function grabAllUsers() {
+        try {
+            const res = await axios.get('http://localhost:8181/user');
+            console.log(res.data);
+        } catch(e) {
+            console.error(e, e.message);
+        }
+    }
+
+//    useEffect due to use of functional components
+    useEffect(() => {
+    })
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </header>
     </div>
   );
