@@ -12,6 +12,7 @@ import {
 
 import Nav from 'react-bootstrap/Nav';
 import Home from './components/Home';
+import Shirts from './components/Shirts';
 
   
   export function App() {
@@ -23,10 +24,13 @@ import Home from './components/Home';
     <Nav.Link href="/home">Home</Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link eventKey="link-1">Shirts</Nav.Link>
+    <Nav.Link href="/shirts" eventKey="link-1">Shirts</Nav.Link>
   </Nav.Item>
   <Nav.Item>
     <Nav.Link eventKey="link-2">Pants</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link eventKey="link-3">Dresses</Nav.Link>
   </Nav.Item>
   <Nav.Item>
     <Nav.Link eventKey="disabled" disabled>
@@ -39,8 +43,8 @@ import Home from './components/Home';
             <Route path="/home">
               <Home/>
             </Route>
-            <Route path="/pants">
-              {/* <Pants /> */}
+            <Route path="/shirts">
+              <Shirts />
             </Route>
             <Route path="/dresses">
               {/* <Dress /> */}
