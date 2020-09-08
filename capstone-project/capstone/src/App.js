@@ -9,22 +9,35 @@ import {
     Route,
     Link
   } from "react-router-dom";
+
+import Nav from 'react-bootstrap/Nav';
+import Home from './components/Home';
+
   
   export function App() {
     return (
       <Router>
         <div>
-        <nav class="nav">
-  <a class="nav-link active" href="#">Subscribe</a>
-  <a class="nav-link" href="#">Shirts</a>
-  <a class="nav-link" href="#">Pants</a>
-  <a class="nav-link" href="#">Dresses</a>
-  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cart</a>
-</nav>
+        <Nav className="justify-content-end" activeKey="/home" onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
+  <Nav.Item>
+    <Nav.Link href="/home">Home</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link eventKey="link-1">Shirts</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link eventKey="link-2">Pants</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link eventKey="disabled" disabled>
+      Cart
+    </Nav.Link>
+  </Nav.Item>
+</Nav>
   
           <Switch>
-            <Route path="/shirts">
-              {/* <Shirts /> */}
+            <Route path="/home">
+              <Home/>
             </Route>
             <Route path="/pants">
               {/* <Pants /> */}
@@ -101,7 +114,7 @@ function Login() {
         </form>
         </div>
       </header>
-    </div>
+     </div>
   );
 }
 
