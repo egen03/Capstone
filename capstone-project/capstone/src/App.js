@@ -14,7 +14,7 @@ import Nav from 'react-bootstrap/Nav';
 import Home from './components/Home';
 import Bracelets from './components/Bracelets';
 import Earrings from './components/Earrings';
-
+import Necklace from './components/Necklace';
   
   export function App() {
     return (
@@ -31,7 +31,7 @@ import Earrings from './components/Earrings';
     <Nav.Link href="/earrings" eventKey="link-2">Earrings</Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link eventKey="link-3">Dresses</Nav.Link>
+    <Nav.Link href="/necklace" eventKey="link-3">Necklace</Nav.Link>
   </Nav.Item>
   <Nav.Item>
     <Nav.Link eventKey="disabled" disabled>
@@ -49,6 +49,9 @@ import Earrings from './components/Earrings';
             </Route>
             <Route path="/earrings">
               <Earrings />
+            </Route>
+            <Route path="/necklace">
+              <Necklace />
             </Route>
           </Switch>
         </div>
