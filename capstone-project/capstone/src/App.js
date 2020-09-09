@@ -15,6 +15,7 @@ import Home from './components/Home';
 import Bracelets from './components/Bracelets';
 import Earrings from './components/Earrings';
 import Necklace from './components/Necklace';
+import Modal from './components/Modal';
   
   export function App() {
     return (
@@ -34,13 +35,12 @@ import Necklace from './components/Necklace';
     <Nav.Link href="/necklace" eventKey="link-3">Necklace</Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link eventKey="disabled" disabled>
-      Cart
-    </Nav.Link>
+    <Nav.Link href="./modal"> Login</Nav.Link>
   </Nav.Item>
 </Nav>
   
           <Switch>
+              
             <Route path="/home">
               <Home/>
             </Route>
@@ -52,6 +52,9 @@ import Necklace from './components/Necklace';
             </Route>
             <Route path="/necklace">
               <Necklace />
+            </Route>
+            <Route path="/modal">
+              <Login />
             </Route>
           </Switch>
         </div>

@@ -6,10 +6,9 @@ export class Home extends React.Component {
     render() {
         return (
             <Jumbotron>
-  <h1>Hello, world!</h1>
+  <h1>Jewelry has the power to be the one little thing that makes you unique!</h1>
   <p>
-    This is a simple hero unit, a simple jumbotron-style component for calling
-    extra attention to featured content or information.
+    Welcome to Hearts of Gold. Browse for gifts for you your family and your friends.
   </p>
   <p>
     <Button variant="primary">Learn more</Button>
