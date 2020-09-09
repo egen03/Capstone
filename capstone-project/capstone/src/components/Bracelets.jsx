@@ -3,13 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from 'react-bootstrap/Carousel';
 
 
-const Shirts = () => {
+const Bracelet = () => {
     return (
         <div className="carousel">
         <Carousel>
-  <Carousel.Item style= {{'height' : "500px"}}>
-    <img style= {{'height' : "500px"}}
-      className="d-block w-100"
+  <Carousel.Item style= {{'height' : "500px", 'padding' : "10px" }}>
+    <img style= {{'height' : "400px"}}
+      className="d-block w-8700"
       src={require("../assets/img/bracelet1.jpg")} //800x400?text=First slide&bg=373940"
       alt="First slide"
     />
@@ -18,9 +18,9 @@ const Shirts = () => {
       <p>Buy my Bracelets</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item style= {{'height' : "500px"}}>
-      <img style= {{'height' : "500px"}}
-      className="d-block w-100"
+  <Carousel.Item style= {{'height' : "500px", 'padding' : "10px" }}>
+      <img style= {{'height' : "400px"}}
+      className="d-block w-600"
       src={require("../assets/img/bracelet2.jpg")}
       alt="Third slide"
     />
@@ -30,9 +30,9 @@ const Shirts = () => {
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item style= {{'height' : "500px"}}>
-    <img style= {{'height' : "500px"}}
-      className="d-block w-100"
+  <Carousel.Item style= {{'height' : "500px", 'padding' : "10px" }}>
+    <img style= {{'height' : "400px"}}
+      className="d-block w-800"
       src={require("../assets/img/bracelet3.jpg")}
       alt="Third slide"
     />
@@ -48,4 +48,4 @@ const Shirts = () => {
     )
 }
 
-export default Shirts;
+export default Bracelet;
