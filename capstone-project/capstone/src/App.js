@@ -23,16 +23,16 @@ import Modal from './components/Modal';
         <div>
         <Nav className="justify-content-end" activeKey="/home" onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
   <Nav.Item>
-    <Nav.Link href="/home">Home</Nav.Link>
+    <Nav.Link href="/home" activeKey="/home">Home</Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link href="/bracelets" eventKey="link-1">Bracelets</Nav.Link>
+    <Nav.Link href="/bracelets">Bracelets</Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link href="/earrings" eventKey="link-2">Earrings</Nav.Link>
+    <Nav.Link href="/earrings">Earrings</Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link href="/necklace" eventKey="link-3">Necklace</Nav.Link>
+    <Nav.Link href="/necklace" >Necklace</Nav.Link>
   </Nav.Item>
   <Nav.Item>
     <Nav.Link href="./modal"> Login</Nav.Link>
